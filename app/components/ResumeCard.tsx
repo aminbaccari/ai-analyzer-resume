@@ -19,7 +19,7 @@ export const ResumeCard = ({resume:{id, companyName, jobTitle, feedback, imagePa
                     <img
                     src={imagePath}
                     alt="resume"
-                    className="w-full h-[350px] object-cover object-top rounded-lg"
+                    className="w-full h-[350px] max-sm:h-[200px] object-cover object-top"
                     />
                 </div>
             </div>
