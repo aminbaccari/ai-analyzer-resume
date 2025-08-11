@@ -13,3 +13,5 @@ export function formatSize(bytes: number): string {
   // Format with 2 decimal places and remove trailing zeros
   return parseFloat((bytes / Math.pow(k, i)).toFixed(2)) + ' ' + units[i];
 }
+
+export const generateUUID = () => crypto.randomUUID();
