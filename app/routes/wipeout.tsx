@@ -23,9 +23,9 @@ const WipeApp = () => {
     }, [isLoading]);
 
     const handleDelete = async () => {
-        files.forEach(async (file) => {
+        for (const file of files) {
             await fs.delete(file.path);
-        });
+        }
         await kv.flush();
         loadFiles();
     };
